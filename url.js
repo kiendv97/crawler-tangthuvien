@@ -1,0 +1,1 @@
+module.exports = 'https://truyen.tangthuvien.vn/tong-hop'
