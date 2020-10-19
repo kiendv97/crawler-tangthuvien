@@ -13,10 +13,7 @@ const dataTypes = {
 async function storyChappter(urlCrawler = 'https://truyen.tangthuvien.vn/doc-truyen/cuu-nhat-chi-luc') {
   try {
     console.log(urlCrawler);
-    const browser = await puppeteer.launch({
-      headless: false,
-      slowMo: 10
-    });
+    const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto(urlCrawler);
     await getName(page)
